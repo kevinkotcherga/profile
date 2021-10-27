@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  background-color: #f89b9e;
+  background-image: linear-gradient(315deg, #f89b9e 0%, #c9d9ff 74%);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 15px;
+}
+
+.container {
+  width: 700px;   /* This sets the width */
+  margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+.card-transparent {
+  background: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 40px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#img-circle {
+  width: 200px;
+  border-radius: 50%;
+  border: solid #fefefe;
+}
+
+h1 {
+  font-size: 35px;
+  color: #5a80da;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #2a5dd6;
+  margin-bottom: 40px;
+}
+
+.description {
+  font-size: 20px;
+  color: #2a5dd6;
+  margin-bottom: 50px;
+}
+
+.img-logo {
+  color: #6F9AFD;
+  font-size: 70px;
+}
+
+.img-logo:hover {
+  color: #99B8FF;
+}
+
+.button-transparent {
+  font-size: 20px;
+  text-decoration: none;
+  color: #2a5dd6;
+  background: rgba(255,255,255,0.2);
+  padding: 10px 100px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(224, 224, 224, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.button-transparent:hover {
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.list-inline {
+  margin: 0;
+  padding: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+  .button-transparent {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 95%;
+  }
+}
